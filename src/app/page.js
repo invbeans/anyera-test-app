@@ -1,13 +1,11 @@
-import Image from 'next/image'
-import styles from './page.module.css'
-import Link from 'next/link'
 import Navbar from './navigation/navbar'
-import LogoNavbar from './navigation/logo'
+import LogoNavbar from './navigation/logo-navbar'
 import SignInButton from './navigation/signin-button'
 import Footer from './footer/footer'
 import MainContainer from './main/main-container'
 import TextContainer from './main/text-container'
 import FormContainer from './main/forms/form-container'
+import LogoFooter from './footer/logo-footer'
 
 export default function Home() {
   return (
@@ -22,7 +20,9 @@ export default function Home() {
         <TextContainer />
         <FormContainer />
       </MainContainer>
-      <Footer />
+      <Footer>
+        <LogoFooter />
+      </Footer>
     </>
 
 

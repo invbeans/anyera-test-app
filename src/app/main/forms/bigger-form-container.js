@@ -6,9 +6,6 @@ export default function BiggerFormContainer({ children }) {
     return (
         <form className={styles["bigger-form-container"]}>
             {children}
-            {/* <button style={{ width: '4rem', height: '3rem', backgroundColor: 'red' }}>
-                <FontAwesomeIcon icon={faMagnifyingGlass} style={{ color: "#ffffff", }} />еще текст
-            </button> */}
         </form>
     )
 }
