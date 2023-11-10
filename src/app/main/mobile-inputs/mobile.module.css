@@ -1,0 +1,89 @@
+.guests-container>label,
+.address-container>label,
+.calendar-arrive>label,
+.calendar-departure>label,
+.guests-container>label {
+    font-size: 0.625rem;
+    padding-left: 1.25rem;
+    margin-bottom: 0.31rem;
+    color: #000;
+}
+
+.guests-container>input,
+.address-container>input,
+.guests-container>select,
+.calendar-arrive>input,
+.calendar-departure>input {
+    font-size: 0.75rem;
+    border: none;
+    height: 2.75rem;
+}
+
+.guests-container>input,
+.address-container>input,
+.guests-container>select {
+    width: 100%;
+    border-radius: 6.25rem;
+    padding-left: 1.25rem;
+    /* width: 20.625rem; */
+}
+
+.calendar-arrive>input {
+    width: 100%;
+    border-top-left-radius: 6.25rem;
+    border-bottom-left-radius: 6.25rem;
+    padding-left: 1.25rem;
+    /* width: 10.3125rem; */
+}
+
+.calendar-departure>input {
+    width: 100%;
+    border-top-right-radius: 6.25rem;
+    border-bottom-right-radius: 6.25rem;
+    padding-left: 1.25rem;
+    /* width: 10.3125rem; */
+}
+
+.address-container,
+.guests-container,
+.calendar-arrive,
+.calendar-departure {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.calendar-container {
+    /* display: flex;
+    align-items: center;
+    gap: 0; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%
+}
+
+.submit-button {
+    width: 100%;
+    height: 2.75rem;
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    letter-spacing: -0.00875rem;
+    color: var(--white-color);
+    background-color: var(--button-background);
+    border: none;
+    border-radius: 6.25rem;
+}
+
+.submit-button-span {
+    padding-left: 0.5rem;
+}
+
+.submit-button:hover {
+    cursor: pointer;
+}
+
+.submit-button:active {
+    cursor: pointer;
+    background-color: var(--button-active-background);
+}
