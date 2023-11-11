@@ -16,7 +16,7 @@ export default function Footer({children}) {
                     <Image src='/vk.svg' alt="vk-logo" width={30} height={30}></Image>
                     <Image src='/email.svg' alt="email-logo" width={30} height={30}></Image>
                 </div>
-                <p className={styles.p}>Политика конфиденциальности</p>
+                <a href='#' className={styles.p}>Политика конфиденциальности</a>
             </div>
         </footer>
     )

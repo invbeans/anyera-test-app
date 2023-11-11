@@ -25,7 +25,7 @@
     height: 100%;
     min-height: 100vh;
     margin-bottom: 50px;
-    margin-top: 5rem;
+    margin-top: var(--navbar-height);
     padding: 3.75rem 0.94rem 0 0.94rem;
     display: flex;
     flex-direction: column;
@@ -87,25 +87,44 @@
         gap: 3.25rem;
     }
 
-    .text-container {
-        gap: 2.5rem;
-    }
-
     .large-text {
         font-size: 3.75rem;
         line-height: 4.6875rem;
     }
 
-    .medium-text {
-        font-size: 1.5rem;
+    .children-container {
+        padding: 8.75rem 0 0 3.12rem;
+        align-items: flex-start;
+    }
+}
+
+@media (width > 430px) {
+    .text-container {
+        gap: 2.5rem;
     }
 
     .small-text {
         font-size: 1.125rem;
     }
 
+    .medium-text {
+        font-size: 1.5rem;
+    }
+}
+
+/* laptops, pc */
+@media (width > 820px) {
     .children-container {
-        padding: 8.75rem 0 0 3.12rem;
+        padding: 5.62rem 0 0 7.5rem;
         align-items: flex-start;
+    }
+
+    .large-text {
+        font-size: 4.375rem;
+        line-height: 4.6875rem;
+    }
+
+    .bigger-form-container {
+        padding: 0.3125rem 0.3125rem 0.3125rem 2.5rem;
     }
 }

@@ -56,7 +56,7 @@
 
 .address-container,
 .calendar-arrive,
-.calendar-departure  {
+.calendar-departure {
     border-right: 1px solid var(--bigger-form-border-color);
 }
 
@@ -102,4 +102,30 @@
 .calendar-arrive>input::-ms-input-placeholder,
 .calendar-departure>input::-ms-input-placeholder {
     color: var(--black-color);
+}
+
+/* laptops, pc */
+@media (width > 820px) {
+
+    .guests-container>label,
+    .address-container>label,
+    .calendar-arrive>label,
+    .calendar-departure>label,
+    .guests-container>label {
+        font-size: 0.875rem;
+    }
+
+    .address-container>input,
+    .guests-container>select,
+    .calendar-arrive>input,
+    .calendar-departure>input {
+        font-size: 1rem;
+    }
+
+    .address-container>input,
+    .guests-container>select,
+    .calendar-arrive>input,
+    .calendar-departure>input {
+        width: 12.664rem;
+    }
 }
