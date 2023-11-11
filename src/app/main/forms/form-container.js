@@ -12,11 +12,19 @@ import BiggerCalendarInputs from "../bigger-inputs/bigger-calendar-inputs"
 import BiggerGuestsSelect from "../bigger-inputs/bigger-guests-select"
 
 export default function FormContainer() {
-    const isMobileInput = useMediaQuery({ maxWidth: 435 })
+    // const isMobileInput = (useMediaQuery({ maxWidth: 430 }) 
+    //     && useMediaQuery({ orientation: 'portrait' })) 
+    //     || (useMediaQuery({ maxWidth: 930 }) 
+    //     && useMediaQuery({ orientation: 'landscape' }));
 
+    const isPortrait = useMediaQuery({orientation: 'portrait'})
+    const isLandscape = useMediaQuery({orientation: 'landscape'})
+    const isPortraitWidth = useMediaQuery({maxWidth: 435})
+    const isLandscapeWidth = useMediaQuery({maxWidth: 930})
+    
     return (
         <>
-            {isMobileInput ?
+            {(isPortrait && isPortraitWidth || isLandscape && isLandscapeWidth) ?
                 <MobileFormContainer>
                     <MobileAddressInput />
                     <MobileCalendarInputs />

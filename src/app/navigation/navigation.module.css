@@ -55,13 +55,22 @@
 }
 
 /* tablets */
-@media (430px < width <=820px) {
+@media (435px < width <= 820px) and (orientation: portrait) {
     .nav {
         padding: 0 1.25rem;
-    }   
+    }
+    
+    .logo-nav {
+        width: 15.8125rem;
+        height: 2.5rem;
+    }
 }
 
-@media (width > 430px) {
+@media (930px < width <= 1180px) and (orientaion: landscape) {
+    .nav {
+        padding: 0 1.25rem;
+    }
+
     .logo-nav {
         width: 15.8125rem;
         height: 2.5rem;
@@ -69,8 +78,13 @@
 }
 
 /* laptops, pc */
-@media (width > 820px) {
+@media (width > 1180px) {
     .nav {
         padding: 0 2.5rem;
+    }
+
+    .logo-nav {
+        width: 15.8125rem;
+        height: 2.5rem;
     }
 }

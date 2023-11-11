@@ -82,7 +82,7 @@
 }
 
 /* tablets */
-@media (430px < width <= 820px) {
+@media (435px < width <= 820px) and (orientation: portrait) {
     .children-container {
         gap: 3.25rem;
     }
@@ -96,9 +96,35 @@
         padding: 8.75rem 0 0 3.12rem;
         align-items: flex-start;
     }
+
+    .text-container {
+        gap: 2.5rem;
+    }
+
+    .small-text {
+        font-size: 1.125rem;
+    }
+
+    .medium-text {
+        font-size: 1.5rem;
+    }
 }
 
-@media (width > 430px) {
+@media (930px < width <= 1020px) and (orientaion: landscape) {
+    .children-container {
+        gap: 3.25rem;
+    }
+
+    .large-text {
+        font-size: 3.75rem;
+        line-height: 4.6875rem;
+    }
+
+    .children-container {
+        padding: 8.75rem 0 0 3.12rem;
+        align-items: flex-start;
+    }
+
     .text-container {
         gap: 2.5rem;
     }
@@ -113,7 +139,8 @@
 }
 
 /* laptops, pc */
-@media (width > 820px) {
+/*улетят ли стили с ориентацией экрана?*/
+@media (width > 1020px) {
     .children-container {
         padding: 5.62rem 0 0 7.5rem;
         align-items: flex-start;
@@ -126,5 +153,17 @@
 
     .bigger-form-container {
         padding: 0.3125rem 0.3125rem 0.3125rem 2.5rem;
+    }
+
+    .text-container {
+        gap: 2.5rem;
+    }
+
+    .small-text {
+        font-size: 1.125rem;
+    }
+
+    .medium-text {
+        font-size: 1.5rem;
     }
 }
