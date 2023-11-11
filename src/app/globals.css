@@ -76,7 +76,11 @@
 :root {
   --white-color: #FFFFFF;
   --button-background: #E83801;
-  --button-hover-background: #000;
+  --black-color: #000;
+  --gray-label-color: #6B6B6B;
+  --bigger-form-column-gap: 1.7rem;
+  --mobile-form-border-color: #DDD;
+  --bigger-form-border-color: #D9D9D9;
 }
 
 * {

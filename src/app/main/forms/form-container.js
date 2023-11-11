@@ -2,10 +2,14 @@
 import { useMediaQuery } from "react-responsive"
 import MobileFormContainer from "./mobile-form-container"
 import BiggerFormContainer from "./bigger-form-container"
-import AddressInput from "../mobile-inputs/address-input"
-import CalendarInput from "../mobile-inputs/calendar-inputs"
-import GuestsSelect from "../mobile-inputs/guests-select"
-import SubmitButton from "../mobile-inputs/submit-button"
+import MobileAddressInput from "../mobile-inputs/mobile-address-input"
+import BiggerAddressInput from "../bigger-inputs/bigger-address-input"
+import MobileCalendarInputs from "../mobile-inputs/mobile-calendar-inputs"
+import MobileGuestsSelect from "../mobile-inputs/mobile-guests-select"
+import MobileSubmitButton from "../mobile-inputs/mobile-submit-button"
+import BiggerSubmitButton from "../bigger-inputs/bigger-submit-button"
+import BiggerCalendarInputs from "../bigger-inputs/bigger-calendar-inputs"
+import BiggerGuestsSelect from "../bigger-inputs/bigger-guests-select"
 
 export default function FormContainer() {
     const isMobileInput = useMediaQuery({ maxWidth: 435 })
@@ -14,15 +18,17 @@ export default function FormContainer() {
         <>
             {isMobileInput ?
                 <MobileFormContainer>
-                    <AddressInput />
-                    <CalendarInput />
-                    <GuestsSelect />
-                    <SubmitButton />
+                    <MobileAddressInput />
+                    <MobileCalendarInputs />
+                    <MobileGuestsSelect />
+                    <MobileSubmitButton />
                 </MobileFormContainer>
                 :
                 <BiggerFormContainer>
-                    <label htmlFor="what">text</label>
-                    <input type="text" id="what"/>
+                    <BiggerAddressInput />
+                    <BiggerCalendarInputs />
+                    <BiggerGuestsSelect />
+                    <BiggerSubmitButton />
                 </BiggerFormContainer>
             }
         </>

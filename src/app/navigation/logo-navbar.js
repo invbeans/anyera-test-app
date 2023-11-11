@@ -1,5 +1,4 @@
 import styles from './navigation.module.css'
-import Image from 'next/image'
 
 export default function LogoNavbar() {
     return (

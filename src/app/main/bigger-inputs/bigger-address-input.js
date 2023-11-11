@@ -1,6 +1,6 @@
-import styles from './mobile.module.css'
+import styles from './bigger-inputs.module.css'
 
-export default function AddressInput() {
+export default function BiggerAddressInput() {
     return (
         <div className={styles["address-container"]}>
             <label htmlFor='address'>Город или адрес</label>

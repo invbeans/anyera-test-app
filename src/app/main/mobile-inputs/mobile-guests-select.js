@@ -1,6 +1,6 @@
-import styles from './mobile.module.css'
+import styles from './mobile-inputs.module.css'
 
-export default function GuestsSelect() {
+export default function MobileGuestsSelect() {
     return (
         <div className={styles["guests-container"]}>
             <label htmlFor="guests">Город или адрес</label>

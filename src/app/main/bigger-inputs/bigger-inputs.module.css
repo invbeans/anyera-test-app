@@ -1,0 +1,105 @@
+.guests-container>label,
+.address-container>label,
+.calendar-arrive>label,
+.calendar-departure>label,
+.guests-container>label {
+    font-size: 0.75rem;
+    /* padding-left: 1.25rem;
+    margin-bottom: 0.31rem; */
+    color: var(--gray-label-color);
+}
+
+.address-container>input,
+.guests-container>select,
+.calendar-arrive>input,
+.calendar-departure>input {
+    border: none;
+}
+
+.address-container>input,
+.guests-container>select,
+.calendar-arrive>input,
+.calendar-departure>input {
+    font-size: 0.75rem;
+}
+
+.address-container>input {
+    width: 7.5625rem;
+}
+
+.calendar-arrive>input,
+.calendar-departure>input {
+    width: 6.25rem;
+}
+
+.guests-container>select {
+    /* margin-left: -4px; */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.guests-container>select::-ms-expand {
+    display: none;
+}
+
+.address-container,
+.guests-container,
+.calendar-arrive,
+.calendar-departure {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.12rem;
+}
+
+.address-container,
+.calendar-arrive,
+.calendar-departure  {
+    border-right: 1px solid var(--bigger-form-border-color);
+}
+
+.calendar-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: var(--bigger-form-column-gap);
+}
+
+.submit-button {
+    width: 3.78125rem;
+    height: 3.78125rem;
+    background-color: var(--button-background);
+    border: none;
+    border-radius: 100%;
+    padding: 1.33rem;
+}
+
+.icon-fill-div {
+    display: inline-block;
+    height: 1.15rem;
+    width: 1.15rem;
+}
+
+.submit-button:hover {
+    cursor: pointer;
+}
+
+.submit-button:active {
+    cursor: pointer;
+    background-color: var(--black-color);
+}
+
+.address-container>input::placeholder,
+.calendar-arrive>input::placeholder,
+.calendar-departure>input::placeholder {
+    color: var(--black-color);
+    opacity: 1;
+}
+
+.address-container>input::-ms-input-placeholder,
+.calendar-arrive>input::-ms-input-placeholder,
+.calendar-departure>input::-ms-input-placeholder {
+    color: var(--black-color);
+}
