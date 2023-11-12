@@ -1,4 +1,4 @@
-import { ceraPro } from '../fonts'
+import { ceraPro } from '../../fonts'
 import styles from './main.module.css'
 
 export default function TextContainer() {
