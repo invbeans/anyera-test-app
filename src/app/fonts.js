@@ -9,3 +9,7 @@ export const roboto = Roboto({
 export const ceraPro = localFont({
     src: './CeraPro-Regular.woff',
 })
+
+export const circe = localFont({
+    src: './Circe-Regular.woff',
+})

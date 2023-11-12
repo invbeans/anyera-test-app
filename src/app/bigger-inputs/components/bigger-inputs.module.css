@@ -16,6 +16,14 @@
     border: none;
 }
 
+.address-container>input:focus,
+.guests-container>select:focus,
+.calendar-arrive>input:focus,
+.calendar-departure>input:focus {
+    border: none;
+    outline: none;
+}
+
 .address-container>input,
 .guests-container>select,
 .calendar-arrive>input,

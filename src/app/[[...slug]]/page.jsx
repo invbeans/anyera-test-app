@@ -8,19 +8,21 @@
 // import LogoFooter from './_components/footer/logo-footer'
 // import ExampleButton from './_components/example'
 // import ExampleAbove from './_components/example-above'
-import Navbar from "./navigation/components/navbar"
-import LogoNavbar from "./navigation/components/logo-navbar"
-import SignInButton from "./navigation/components/signin-button"
-import Footer from "./footer/components/footer"
-import MainContainer from "./main/components/main-container"
-import TextContainer from "./main/components/text-container"
-import FormContainer from "./forms/components/form-container"
-import LogoFooter from "./footer/components/logo-footer"
+import Navbar from "../navigation/components/navbar"
+import LogoNavbar from "../navigation/components/logo-navbar"
+import SignInButton from "../navigation/components/signin-button"
+import Footer from "../footer/components/footer"
+import MainContainer from "../main/components/main-container"
+import TextContainer from "../main/components/text-container"
+import FormContainer from "../forms/components/form-container"
+import LogoFooter from "../footer/components/logo-footer"
+import OverlayBackground from "../overlay/components/overlay-background"
 
-export default function Home() {
+export default function Home({ params }) {
   return (
 
     <>
+    {params.slug == "signin" && <OverlayBackground/>}
       <Navbar>
         <LogoNavbar />
         <SignInButton />
