@@ -19,21 +19,22 @@ import LogoFooter from "../footer/components/logo-footer"
 import OverlayBackground from "../overlay/components/overlay-background"
 
 export default function Home({ params }) {
+  let isOverlayVisible = params.slug == "signin"
+
   return (
 
     <>
-    {params.slug == "signin" && <OverlayBackground/>}
-
+      {isOverlayVisible && <OverlayBackground isVisible={isOverlayVisible} />}
       <Navbar>
         <LogoNavbar />
         <SignInButton />
       </Navbar>
       <MainContainer>
-        <TextContainer />
+        <TextContainer isTextAnimated={!isOverlayVisible} />
         <FormContainer />
       </MainContainer>
       <Footer>
-        <LogoFooter />
+        <LogoFooter isLogoAnimated={!isOverlayVisible} />
       </Footer>
     </>
   )

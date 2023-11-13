@@ -43,23 +43,7 @@
     flex-direction: column;
     gap: 1.56rem;
     justify-content: space-between;
-    animation: 1s slide-in ease-out 1;
 }
-
-@keyframes slide-in {
-    0% {
-      opacity: 0;
-      transform: translateX(10%);
-    }
-    30% {
-      opacity: 0;
-    }
-    
-    100% {
-      opacity: 1;
-      transform: translateX(0%);
-    }
-  }
 
 .small-text {
     font-size: 0.75rem;

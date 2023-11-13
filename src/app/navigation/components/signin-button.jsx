@@ -7,7 +7,7 @@ import Image from 'next/image'
 export default function SignInButton() {
 
     return (
-        <Link href="signin">
+        <Link href="signin" scroll={false}>
             <div className={styles["signin-button"]}>
                 <div className={styles["menu-div"]}>
                     <div className={styles["menu-rectangle"]}>
