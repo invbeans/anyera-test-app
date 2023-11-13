@@ -10,6 +10,25 @@
     padding: 1.875rem 0 1.875rem 0;
 }
 
+.item {
+    width: 56%;
+    overflow: visible;
+    stroke: #000000;
+    stroke-width: 2;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+}
+
+.container {
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    place-content: center;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+}
+
 .logo-footer {
     width: 18.875rem;
     height: 3rem;
@@ -52,7 +71,7 @@
 }
 
 /* tablets */
-@media (435px < width <= 1024px) and (orientation: portrait) {
+@media (435px < width <=1024px) and (orientation: portrait) {
     .footer {
         /* height: 8.8125rem; */
         flex-direction: row;
@@ -94,7 +113,7 @@
     }
 }
 
-@media (930px < width <= 1180px) and (orientation: landscape) {
+@media (930px < width <=1180px) and (orientation: landscape) {
     .footer {
         /* height: 8.8125rem; */
         flex-direction: row;

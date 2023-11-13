@@ -32,12 +32,12 @@
 }
 
 .address-container>input {
-    width: 7.5625rem;
+    max-width: 7.5625rem;
 }
 
 .calendar-arrive>input,
 .calendar-departure>input {
-    width: 6.25rem;
+    max-width: 6.25rem;
 }
 
 .guests-container>select {
@@ -134,6 +134,16 @@
     .guests-container>select,
     .calendar-arrive>input,
     .calendar-departure>input {
-        width: 12.664rem;
+        max-width: 10.664rem;
+    }
+}
+
+/* big laptops, pc */
+@media (width > 1400px) {
+    .address-container>input,
+    .guests-container>select,
+    .calendar-arrive>input,
+    .calendar-departure>input {
+        max-width: 12.664rem;
     }
 }

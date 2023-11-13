@@ -17,17 +17,20 @@ import TextContainer from "../main/components/text-container"
 import FormContainer from "../forms/components/form-container"
 import LogoFooter from "../footer/components/logo-footer"
 import OverlayBackground from "../overlay/components/overlay-background"
+import AnimatedExample from "../footer/components/animated-example"
 
 export default function Home({ params }) {
   return (
 
     <>
     {params.slug == "signin" && <OverlayBackground/>}
+
       <Navbar>
         <LogoNavbar />
         <SignInButton />
       </Navbar>
       <MainContainer>
+      {/* <AnimatedExample/> */}
         <TextContainer />
         <FormContainer />
       </MainContainer>

@@ -13,7 +13,7 @@ export default function FormContainer() {
     const isPortrait = useMediaQuery({ orientation: 'portrait' })
     const isLandscape = useMediaQuery({ orientation: 'landscape' })
     const isPortraitWidth = useMediaQuery({ maxWidth: 435 })
-    const isLandscapeWidth = useMediaQuery({ maxWidth: 930 })
+    const isLandscapeWidth = useMediaQuery({ maxWidth: 935 })
 
     return (
         <>

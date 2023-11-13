@@ -1,10 +1,9 @@
 "use client"
 
-import styles from './footer.module.css'
-import Image from 'next/image'
 import { motion } from "framer-motion"
+import styles from './footer.module.css'
 
-export default function Footer({children}) {
+export default function AnimatedExample() {
     const icon = {
         hidden: {
             pathLength: 0,
@@ -12,21 +11,12 @@ export default function Footer({children}) {
         },
         visible: {
             pathLength: 1,
-            fill: "rgba(0, 0, 0, 1)"
+            fill: "rgba(255, 255, 255, 1)"
         }
     }
 
     return (
-        <footer className={styles.footer}>
-            <div className={styles["footer-col"]}>
-                {children}
-                <p className={styles.p}>Аренда жилья и автомобилей от владельцев</p>
-            </div>
-            <div className={styles["footer-col"]}>
-                <div className={styles["icons-div"]}>
-                    <Image src='/whatsapp.svg' alt="whatsapp-logo" width={30} height={30}></Image>
-                    {/* <Image src='/telegram.svg' alt="telegram-logo" width={30} height={30}></Image> */}
-                    <div className={styles.container}>
+        <div className={styles.container}>
             <motion.svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 100 100"
@@ -45,11 +35,5 @@ export default function Footer({children}) {
                 />
             </motion.svg>
         </div>
-                    <Image src='/vk.svg' alt="vk-logo" width={30} height={30}></Image>
-                    <Image src='/email.svg' alt="email-logo" width={30} height={30}></Image>
-                </div>
-                <a href='#' className={styles.p}>Политика конфиденциальности</a>
-            </div>
-        </footer>
     )
 }

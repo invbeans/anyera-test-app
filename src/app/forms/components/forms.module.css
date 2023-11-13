@@ -13,9 +13,13 @@
 
 .bigger-form-container {
     /*мб на время мб нет*/
-    width: max-content;
+    /* width: max-content; */
+    width: 90%;
+    min-width: fit-content;
     height: 4.375rem;
-    display: flex;
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: 1fr 2fr 1.4fr 3.78125rem;
     gap: var(--bigger-form-column-gap);
     align-items: center;
     background-color: var(--white-color);
@@ -26,6 +30,8 @@
 
 @media (width > 1020px) {
     .bigger-form-container {
+        /* width: 90%; */
+        grid-template-columns: 1fr 2fr 1fr 3.78125rem;
         padding: 0.3125rem 0.3125rem 0.3125rem 2.5rem;
     }
 }
