@@ -31,7 +31,7 @@ export default function LogoFooter({ isLogoAnimated }) {
                 }}
             >
                 <div className={styles["logo-footer"]} ref={ref}>
-                    <img src='/driverave.svg' alt='logo'></img>
+                    <img src='/anyera-test-app/driverave.svg' alt='logo'></img>
                 </div>
                 <p className={styles.p}>Аренда жилья и автомобилей от владельцев</p>
             </motion.div>}
@@ -39,7 +39,7 @@ export default function LogoFooter({ isLogoAnimated }) {
             {!isLogoAnimated &&
                 <div className={styles["footer-col"]}>
                     <div className={styles["logo-footer"]} ref={ref}>
-                        <img src='/driverave.svg' alt='logo'></img>
+                        <img src='/anyera-test-app/driverave.svg' alt='logo'></img>
                     </div>
                     <p className={styles.p}>Аренда жилья и автомобилей от владельцев</p>
                 </div>}
