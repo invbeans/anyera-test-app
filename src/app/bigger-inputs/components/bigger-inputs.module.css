@@ -39,7 +39,12 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 0.12rem;
-    border: 1px solid var(--bigger-form-border-color);
+}
+
+.address-container,
+.calendar-arrive,
+.calendar-departure {
+    border-right: 1px solid var(--bigger-form-border-color);;
 }
 
 .calendar-container {
