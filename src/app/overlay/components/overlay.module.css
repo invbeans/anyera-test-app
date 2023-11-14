@@ -152,8 +152,6 @@
 .checkbox:checked+label {
     position: relative;
     padding: 0.35rem 0 0.35rem 2.495rem;
-    /* padding-left: 2.495rem;
-    padding-top: 0.35rem; */
     cursor: pointer;
 }
 

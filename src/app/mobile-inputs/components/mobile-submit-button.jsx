@@ -5,7 +5,7 @@ import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 export default function MobileSubmitButton() {
     function handleClick(e) {
         e.preventDefault()
-        console.log('клиент нажал кнопку формы')
+        console.log('Клиент нажал кнопку формы')
     }
 
     return (

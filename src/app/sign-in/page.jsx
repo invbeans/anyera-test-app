@@ -1,7 +1,6 @@
 "use client"
 
 import dynamic from "next/dynamic"
-
 import Footer from "../footer/components/footer"
 import MainContainer from "../main/components/main-container"
 import TextContainer from "../main/components/text-container"

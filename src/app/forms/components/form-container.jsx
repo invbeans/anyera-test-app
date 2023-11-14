@@ -1,5 +1,3 @@
-"use client"
-
 import { useMediaQuery } from "react-responsive"
 import MobileFormContainer from "./mobile-form-container"
 import BiggerFormContainer from "./bigger-form-container"

@@ -1,5 +1,3 @@
-"use client"
-
 import OverlayContainer from './overlay-container'
 import styles from './overlay.module.css'
 

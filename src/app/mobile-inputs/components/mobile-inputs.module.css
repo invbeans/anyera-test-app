@@ -10,7 +10,6 @@
 }
 
 .address-container>input,
-.guests-container>select,
 .calendar-arrive>input,
 .calendar-departure>input {
     font-size: 0.75rem;
@@ -18,12 +17,10 @@
     border: 1px solid var(--mobile-form-border-color);
 }
 
-.address-container>input,
-.guests-container>select {
+.address-container>input {
     width: 100%;
     border-radius: 6.25rem;
     padding-left: 1.25rem;
-    /* width: 20.625rem; */
 }
 
 .calendar-arrive>input {
@@ -32,7 +29,6 @@
     border-bottom-left-radius: 6.25rem;
     padding-left: 1.25rem;
     border-collapse: collapse;
-    /* width: 10.3125rem; */
 }
 
 .calendar-departure>input {
@@ -41,7 +37,6 @@
     border-bottom-right-radius: 6.25rem;
     padding-left: 1.25rem;
     border-collapse: collapse;
-    /* width: 10.3125rem; */
 }
 
 .address-container,
@@ -54,9 +49,6 @@
 }
 
 .calendar-container {
-    /* display: flex;
-    align-items: center;
-    gap: 0; */
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -101,18 +93,4 @@
 .calendar-arrive>input::-ms-input-placeholder,
 .calendar-departure>input::-ms-input-placeholder {
     color: var(--black-color);
-}
-
-.guests-container>select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    background-image: url('../../../../public/select-arrow.svg');
-    background-repeat: no-repeat;
-    background-position: right 1.25rem center;
-    background-size: 0.75rem;
-}
-
-.guests-container>select::-ms-expand {
-    display: none;
 }

@@ -1,5 +1,3 @@
-"use client"
-
 import { ceraPro } from '../../fonts'
 import styles from './main.module.css'
 import { motion } from "framer-motion";

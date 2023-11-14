@@ -6,10 +6,6 @@ export default function BiggerGuestsSelect() {
         <div className={styles["guests-container"]}>
             <label >Гости</label>
             <SelectContainer />
-            {/* <select id="guests" name='guests'>
-                <option>2 взрослых без детей</option>
-                <option>2 детей без взрослых</option>
-            </select> */}
         </div>
     )
 }

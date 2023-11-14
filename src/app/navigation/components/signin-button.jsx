@@ -1,15 +1,12 @@
-"use client"
-
 import Link from 'next/link'
 import styles from './navigation.module.css'
 import Image from 'next/image'
 
 export default function SignInButton() {
-
     return (
         <Link href="sign-in" scroll={false}>
             <div className={styles["signin-button"]}>
-                <div className={styles["menu-div"]}>
+                <div className={styles["menu-button-div"]}>
                     <div className={styles["menu-rectangle"]}>
                         <Image src='/rectangle.svg' alt="menu" fill={true}></Image>
                     </div>

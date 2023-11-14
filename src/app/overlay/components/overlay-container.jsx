@@ -1,5 +1,3 @@
-"use client"
-
 import OverlayExitButton from './overlay-exit-button'
 import styles from './overlay.module.css'
 import { circe } from '../../fonts'

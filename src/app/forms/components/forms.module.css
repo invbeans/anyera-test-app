@@ -1,10 +1,8 @@
 .mobile-form-container {
     width: 100%;
-    /* display: flex; */
     display: grid;
     grid-template-rows: repeat(4, 1fr);
     padding: 1.875rem 0.9375rem;
-    /* align-items: start; */
     gap: 1.875rem;
     border-radius: 1.25rem;
     background: rgba(255, 255, 255, 0.3);
@@ -12,12 +10,9 @@
 }
 
 .bigger-form-container {
-    /*мб на время мб нет*/
-    /* width: max-content; */
     width: 90%;
     min-width: fit-content;
     height: 4.375rem;
-    /* display: flex; */
     display: grid;
     grid-template-columns: 1fr 2fr 1.4fr 3.78125rem;
     gap: var(--bigger-form-column-gap);
@@ -30,7 +25,6 @@
 
 @media (width > 1020px) {
     .bigger-form-container {
-        /* width: 90%; */
         grid-template-columns: 1fr 2fr 1fr 3.78125rem;
         padding: 0.3125rem 0.3125rem 0.3125rem 2.5rem;
     }

@@ -6,9 +6,6 @@ export default function MobileGuestsSelect() {
         <div className={styles["guests-container"]}>
             <label>Гости</label>
             <SelectContainer/>
-            {/* <select id="guests" name='guests'>
-                <option>2 взрослых без детей</option>
-            </select> */}
         </div>
     )
 }

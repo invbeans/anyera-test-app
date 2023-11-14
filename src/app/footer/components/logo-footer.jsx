@@ -1,5 +1,3 @@
-"use client"
-
 import styles from './footer.module.css'
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react"
@@ -9,12 +7,9 @@ export default function LogoFooter({ isLogoAnimated }) {
     const isInView = useInView(ref)
 
     const logo = {
-        hidden: (isLogoAnimated) ? {
+        hidden: {
             opacity: 0,
             scale: 0.8
-        } : {
-            opacity: 1,
-            scale: 1
         },
         visible: {
             opacity: 1,

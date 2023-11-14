@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 
 export default function BiggerSubmitButton () {
-
     function handleClick(e) {
         e.preventDefault()
         console.log('клиент нажал кнопку формы')

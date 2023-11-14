@@ -4,13 +4,10 @@
 .calendar-departure>label,
 .guests-container>label {
     font-size: 0.75rem;
-    /* padding-left: 1.25rem;
-    margin-bottom: 0.31rem; */
     color: var(--gray-label-color);
 }
 
 .address-container>input,
-.guests-container>select,
 .calendar-arrive>input,
 .calendar-departure>input {
     border: none;
@@ -18,7 +15,6 @@
 }
 
 .address-container>input:focus,
-.guests-container>select:focus,
 .calendar-arrive>input:focus,
 .calendar-departure>input:focus {
     border: none;
@@ -34,17 +30,6 @@
     max-width: 6.25rem;
 }
 
-.guests-container>select {
-    /* margin-left: -4px; */
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-}
-
-.guests-container>select::-ms-expand {
-    display: none;
-}
-
 .address-container,
 .guests-container,
 .calendar-arrive,
@@ -54,12 +39,7 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 0.12rem;
-}
-
-.address-container,
-.calendar-arrive,
-.calendar-departure {
-    border-right: 1px solid var(--bigger-form-border-color);
+    border: 1px solid var(--bigger-form-border-color);
 }
 
 .calendar-container {
@@ -109,7 +89,6 @@
 
 /* laptops, pc */
 @media (width > 1280px) {
-
     .guests-container>label,
     .address-container>label,
     .calendar-arrive>label,
@@ -119,16 +98,9 @@
     }
 
     .address-container>input,
-    .guests-container>select,
     .calendar-arrive>input,
     .calendar-departure>input {
         font-size: 1rem;
-    }
-
-    .address-container>input,
-    .guests-container>select,
-    .calendar-arrive>input,
-    .calendar-departure>input {
         max-width: 10.664rem;
     }
 }
@@ -136,7 +108,6 @@
 /* big laptops, pc */
 @media (width > 1400px) {
     .address-container>input,
-    .guests-container>select,
     .calendar-arrive>input,
     .calendar-departure>input {
         max-width: 12.664rem;
