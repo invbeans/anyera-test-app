@@ -4,7 +4,7 @@ import { motion, useInView } from "framer-motion"
 import styles from './footer.module.css'
 import { useRef } from "react"
 
-export default function AnimatedLogo({viewBox, d}) {
+export default function AnimateContact({viewBox, d}) {
     const ref = useRef(null)
     const isInView = useInView(ref)
 

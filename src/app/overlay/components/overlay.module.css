@@ -121,6 +121,7 @@
 
 .enter-button:hover {
     cursor: pointer;
+    background-color: var(--button-hover-background);
 }
 
 .enter-button:active {

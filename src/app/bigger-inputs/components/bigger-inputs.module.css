@@ -92,6 +92,7 @@
 
 .submit-button:hover {
     cursor: pointer;
+    background-color: var(--button-hover-background);
 }
 
 .submit-button:active {
