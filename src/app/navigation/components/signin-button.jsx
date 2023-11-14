@@ -8,17 +8,17 @@ export default function SignInButton() {
             <div className={styles["signin-button"]}>
                 <div className={styles["menu-button-div"]}>
                     <div className={styles["menu-rectangle"]}>
-                        <Image src='/rectangle.svg' alt="menu" fill={true}></Image>
+                        <Image src='/anyera-test-app/rectangle.svg' alt="menu" fill={true}></Image>
                     </div>
                     <div className={styles["menu-rectangle"]}>
-                        <Image src='/rectangle.svg' alt="menu" fill={true}></Image>
+                        <Image src='/anyera-test-app/rectangle.svg' alt="menu" fill={true}></Image>
                     </div>
                     <div className={styles["menu-rectangle"]}>
-                        <Image src='/rectangle.svg' alt="menu" fill={true}></Image>
+                        <Image src='/anyera-test-app/rectangle.svg' alt="menu" fill={true}></Image>
                     </div>
                 </div>
                 <div className={styles["user-image-div"]}>
-                    <Image src='/user-images.svg' alt="user-image" fill={true}></Image>
+                    <Image src='/anyera-test-app/user-images.svg' alt="user-image" fill={true}></Image>
                 </div>
             </div>
         </Link>

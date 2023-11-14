@@ -3,6 +3,6 @@ import Image from 'next/image'
 
 export default function ImageBackground() {
     return (
-        <Image src='/background.png' alt="background image" className={styles["image-container"]} fill={true} priority></Image>
+        <Image src='/anyera-test-app/background.png' alt="background image" className={styles["image-container"]} fill={true} priority></Image>
     )
 }

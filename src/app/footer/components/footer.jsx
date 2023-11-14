@@ -6,7 +6,7 @@ import whatsappSvg from '../../../../public/whatsapp-svg-info.json'
 import telegramSvg from '../../../../public/telegram-svg-info.json'
 import vkSvg from '../../../../public/vk-svg-info.json'
 import emailSvg from '../../../../public/email-svg-info.json'
-const LogoFooter = dynamic(() => import("./logo-footer"), { ssr: false })
+const LogoFooter = dynamic(() => import("/anyera-test-app/logo-footer"), { ssr: false })
 
 export default function Footer({ isLogoAnimated }) {
     return (
