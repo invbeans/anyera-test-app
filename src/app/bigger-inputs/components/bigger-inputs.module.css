@@ -14,6 +14,7 @@
 .calendar-arrive>input,
 .calendar-departure>input {
     border: none;
+    font-size: 0.75rem;
 }
 
 .address-container>input:focus,
@@ -22,13 +23,6 @@
 .calendar-departure>input:focus {
     border: none;
     outline: none;
-}
-
-.address-container>input,
-.guests-container>select,
-.calendar-arrive>input,
-.calendar-departure>input {
-    font-size: 0.75rem;
 }
 
 .address-container>input {

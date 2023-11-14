@@ -80,6 +80,8 @@
   --black-color: #000;
   --gray-label-color: #6B6B6B;
   --bigger-form-column-gap: 1.7rem;
+  --select-item-hover: #B6CFE1;
+  --select-item-active: (128, 148, 163)CFE1;
   --mobile-form-border-color: #DDD;
   --bigger-form-border-color: #D9D9D9;
   --sign-in-form-border-color: #B5B5B5;

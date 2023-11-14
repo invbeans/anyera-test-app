@@ -14,7 +14,6 @@
 .calendar-arrive>input,
 .calendar-departure>input {
     font-size: 0.75rem;
-    border: none;
     height: 2.75rem;
     border: 1px solid var(--mobile-form-border-color);
 }

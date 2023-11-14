@@ -1,0 +1,118 @@
+.select-container {
+    position: relative;
+    width: 100%;
+    height: 2.75rem;
+    padding: 0 1.25rem;
+    background-color: var(--white-color);
+    font-size: 0.75rem;
+    border-radius: 6.25rem;
+    border: 1px solid var(--mobile-form-border-color);
+    background-image: url('../../../../public/select-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: right 1.25rem center;
+    background-size: 0.75rem;
+    cursor: pointer;
+}
+
+.select-header {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.select-list {
+    position: absolute;
+    top: 100%;
+    width: 90%;
+    margin-left: -0.825rem;
+    border-radius: 1.25rem;
+    background-color: var(--white-color);
+}
+
+.select-item {
+    height: 2.75rem;
+    display: flex;
+    padding-left: 1.25rem;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+
+.select-item:first-of-type {
+    border-top-right-radius: 1.25rem;
+    border-top-left-radius: 1.25rem;
+}
+
+.select-item:last-of-type {
+    border-bottom-right-radius: 1.25rem;
+    border-bottom-left-radius: 1.25rem;
+}
+
+@media (width > 435px) and (orientation: portrait) {
+    .select-container {
+        height: fit-content;
+        border: none;
+        font-size: 0.75rem;
+        padding-left: 0;
+        padding-right: 1.25rem;
+    }
+
+    .select-list {
+        width: 100%;
+    }
+
+    .select-item:hover {
+        background-color: var(--select-item-hover);
+    }
+
+    .select-item:active {
+        background-color: var(--select-item-active);
+    }
+}
+
+@media (width > 935px) and (orientation: landscape) {
+    .select-container {
+        height: fit-content;
+        border: none;
+        font-size: 0.75rem;
+        max-width: 10.664rem;
+        padding-left: 0;
+        padding-right: 1.25rem;
+    }
+
+    .select-list {
+        width: 100%;
+    }
+}
+
+
+@media (width > 1280px) {
+    .select-container {
+        height: fit-content;
+        font-size: 1rem;
+        border: none;
+        max-width: 10.664rem;
+        padding-left: 0;
+        padding-right: 1.25rem;
+    }
+
+    .select-list {
+        width: 100%;
+    }
+
+    .select-item:hover {
+        background-color: var(--select-item-hover);
+    }
+
+    .select-item:active {
+        background-color: var(--select-item-active);
+    }
+}
+
+@media (width > 1400px) {
+    .select-container {
+        max-width: 12.664rem;
+    }
+}

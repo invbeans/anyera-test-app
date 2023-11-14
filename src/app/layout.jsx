@@ -16,10 +16,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="ru">
       <body className={roboto.className}>
-        <Navbar>
-          <LogoNavbar />
-          <SignInButton />
-        </Navbar>
+          <Navbar>
+            <LogoNavbar />
+            <SignInButton />
+          </Navbar>
           {children}
       </body>
     </html>
