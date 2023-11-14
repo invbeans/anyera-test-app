@@ -1,12 +1,10 @@
-import dynamic from "next/dynamic"
-
 import AnimateContact from './animated-contact'
 import styles from './footer.module.css'
 import whatsappSvg from '../../../../public/whatsapp-svg-info.json'
 import telegramSvg from '../../../../public/telegram-svg-info.json'
 import vkSvg from '../../../../public/vk-svg-info.json'
 import emailSvg from '../../../../public/email-svg-info.json'
-const LogoFooter = dynamic(() => import("/anyera-test-app/logo-footer"), { ssr: false })
+import LogoFooter from "./logo-footer"
 
 export default function Footer({ isLogoAnimated }) {
     return (
